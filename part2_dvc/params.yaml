@@ -1,0 +1,16 @@
+# params.yaml
+index_col: 'id'
+target_col: 'price'
+
+cat_ordinal_col: ["build_year_bin", "floor_bin", "floors_total_bin", 'rooms_bin']
+cat_col: ["building_type_int"]
+digital_notfilter: ["latitude", "longitude"]
+
+## model_params
+iterations: 500
+learning_rate: 0.05 
+depth: 6
+## validation_params
+n_splits: 5
+metrics: ['r2', 'neg_root_mean_squared_error', 'max_error']
+n_jobs: -1

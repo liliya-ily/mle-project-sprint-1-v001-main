@@ -1,0 +1,10 @@
+name_raw_table: 'features_raw'
+name_feature_table: 'flats_feature'
+
+target_col: "price"
+id_cols: ["building_id", "flat_id"]
+cat_ordinal_cols: ["build_year", "floor", "rooms"]
+cat_cols: ["floors_total", "building_type_int"]
+digital_notfilter_cols: ["latitude", "longitude"]
+
+binning_cols: ['floors_total', 'floor', 'rooms']
